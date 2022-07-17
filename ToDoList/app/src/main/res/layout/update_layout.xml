@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task"
+            android:id="@+id/task"
+            android:textStyle="italic"
+            android:textSize="25dp"
+            android:textColorHint="#E91E63"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:drawableRight="@drawable/ic_baseline_date_range_24"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#E91E63"
+            android:drawableTint="#FF0000"
+
+            android:hint="Set Date"
+            android:textAlignment="textStart"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+        <Spinner
+            android:textAlignment="textStart"
+            android:layout_marginTop="16dp"
+            android:id="@+id/spinnerList"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+        <Spinner
+            android:textAlignment="textStart"
+            android:layout_marginTop="16dp"
+            android:id="@+id/spinnerPriority"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
